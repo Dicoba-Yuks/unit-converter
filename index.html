@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Wadah utama untuk seluruh aplikasi -->
+    <div class="converter-container">
+        <h2>Unit Converter</h2> <!-- Judul aplikasi -->
+
+        <!--
+        Digunakan untuk mengelompokkan label dan input/select,
+        membuat tata letak lebih teratur
+        -->
+        <div class="input-group">
+            
+            <!-- Memasukkan nilai yang akan dikonversi -->
+            <label for="inputValue">Value to Convert:</label>
+            <input type="number" id="inputValue" placeholder="Enter value">
+        </div>
+
+        <div class="input-group">
+            <label for="inputUnit">From Unit:</label>
+            <select id="inputUnit"> <!-- Memilih satuan input -->
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="outputUnit">To Unit:</label>
+            <select id="outputUnit">
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="celsius">Celsius</option>
+            </select>
+        </div>
+
+        <!-- Wadah untuk menampilkan hasil konversi -->
+        <div class="result-box">
+            <p>Result:</p>
+            <span id="resultValue"></span>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+/* 
+Mengatur latar belakang halaman dan menggunakan Flexbox untuk menempatkan wadah utama di tengah layar
+*/
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/*Memberikan gaya pada wadah utama,
+termasuk warna latar belakang putih,
+padding, sudut membulat,
+dan bayangan untuk membuatnya menonjol.
+*/
+.converter-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 450px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 25px;
+}
+
+/* Mengatur spasi di antara setiap grup input */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Memberi gaya pada teks label */
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: bold;
+}
+
+/*
+Memberikan lebar penuh (width: 100%) 
+dan padding yang seragam untuk kotak input dan dropdown agar terlihat rapi
+*/
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+    font-size: 1em;
+}
+
+/* Bagian yang akan menampilkan hasil konversi */
+.result-box {
+    background-color: #e9ecef;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 30px;
+    font-size: 1.2em;
+    color: #333;
+    border-left: 5px solid #007bff;
+}
+
+.result-box p {
+    margin: 0 0 10px 0;
+    font-weight: bold;
+}
+
+/* Gaya khusus untuk elemen yang menampilkan hasil, 
+dengan ukuran font yang lebih besar dan warna biru cerah agar mudah terlihat
+*/
+#resultValue {
+    font-weight: normal;
+    font-size: 1.5em;
+    color: #007bff;
+}
